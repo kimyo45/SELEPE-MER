@@ -1,0 +1,239 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #1a1a1a; /* Dark background */
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    padding: 20px;
+    background: #262626; /* Slightly lighter than the body */
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #00ff66; /* Gamer green */
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #cccccc;
+}
+
+header .axes img {
+    height: 50px;
+    margin: 0 10px;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Dropdown Section */
+.dropdown-section {
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.dropdown-section h2 {
+    color: #00ff66;
+}
+
+.dropdown-section label, 
+.dropdown-section textarea,
+.dropdown-section select, 
+.dropdown-section button {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.dropdown-section select, 
+.dropdown-section textarea, 
+.dropdown-section button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+.dropdown-section button {
+    background: #00ff66;
+    color: #1a1a1a;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dropdown-section button:hover {
+    background: #00cc55;
+}
+
+/* Product Gallery */
+.image-gallery {
+    margin-top: 20px;
+}
+
+.image-gallery h2 {
+    color: #00ff66;
+    text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background: #262626;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+/* Sustainability Section */
+.sustainability {
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.sustainability h2 {
+    color: #00ff66;
+    text-align: center;
+}
+
+.sustainability p {
+    color: #cccccc;
+    text-align: center;
+}
+
+/* Enquiries Section */
+.enquiries {
+    margin-top: 20px;
+}
+
+.enquiries h2 {
+    color: #00ff66;
+    text-align: center;
+}
+
+.enquiries form {
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.enquiries input,
+.enquiries textarea,
+.enquiries button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+.enquiries button {
+    background: #00ff66;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.enquiries button:hover {
+    background: #00cc55;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
+.product-item img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-item img:hover {
+    transform: scale(1.1);
+}
+.events-section {
+    background-color: #1c1c1c; /* Dark grey background for a professional look */
+    color: #fff; /* White text for contrast */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.events-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00ff00; /* Gamer green inspired by the Razer theme */
+}
+
+.event-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #cccccc; /* Subtle light grey for a clean look */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1); /* Pop-out effect */
+}
